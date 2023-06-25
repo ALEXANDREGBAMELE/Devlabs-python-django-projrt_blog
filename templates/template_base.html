@@ -1,0 +1,16 @@
+
+<html>
+    <header>
+        <meta charset="UTF-8">
+        <title>Page d'accueil</title>
+    </header>
+    <body>
+        <ul style="list-style:none">
+            <li style="display: inline-block; padding:10px 20px;"><a href="{% url 'home' %}">Accueil</a></li>
+            <li style="display: inline-block; padding:10px 20px;"><a href="{% url 'contact' %}">contact</a></li>
+            <li style="display: inline-block; padding:10px 20px;"><a href="{% url 'article' %}">Article</a></li>
+        </ul>
+
+        {%block contenu %} {%endblock%}
+    </body>
+</html>
